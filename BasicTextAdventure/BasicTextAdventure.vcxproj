@@ -135,6 +135,7 @@
     <ClCompile Include="ItemObject.cpp" />
     <ClCompile Include="LocationObject.cpp" />
     <ClCompile Include="PlayerObject.cpp" />
+    <ClCompile Include="UnitTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseObject.h" />
@@ -144,6 +145,7 @@
     <ClInclude Include="ItemObject.h" />
     <ClInclude Include="LocationObject.h" />
     <ClInclude Include="PlayerObject.h" />
+    <ClInclude Include="UnitTests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

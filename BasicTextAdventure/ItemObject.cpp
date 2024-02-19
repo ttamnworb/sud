@@ -1,31 +1,34 @@
 #include "ItemObject.h"
 
 
-ItemObject::ItemObject(const std::string& name, const std::string description, const int uses)
-	: BaseObject(name, description)
-	, m_NumberOfUses(uses)
-	, m_TimesUsed(0)
-{}
-
-bool ItemObject::LoadObject(std::ifstream& inputStream)
+namespace SUD
 {
-	// TODO
-	return false;
-}
+	ItemObject::ItemObject(const std::string& name, const std::string description, const int uses)
+		: BaseObject(name, description)
+		, m_NumberOfUses(uses)
+		, m_TimesUsed(0)
+	{}
 
-bool ItemObject::SaveObject(std::ofstream& outputStream)
-{
-	// TODO
-	return false;
-}
-
-bool ItemObject::UseObject()
-{
-	bool result(false);
-	if (m_TimesUsed < m_NumberOfUses)
+	bool ItemObject::LoadObject(std::ifstream& inputStream)
 	{
-		++m_TimesUsed;
-		result = true;
+		// TODO
+		return false;
 	}
-	return result;
+
+	bool ItemObject::SaveObject(std::ofstream& outputStream)
+	{
+		// TODO
+		return false;
+	}
+
+	bool ItemObject::UseObject()
+	{
+		bool result(false);
+		if (m_TimesUsed < m_NumberOfUses)
+		{
+			++m_TimesUsed;
+			result = true;
+		}
+		return result;
+	}
 }
