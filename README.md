@@ -8,7 +8,7 @@ There is a Microsoft Visual Studio 2022 solution and project that can be used to
 The output is a single executable which does not need installation.  It can be run from Visual Studio or Windows Explorer.
 
 # Usage
-At this stage the application is not interactive, when it starts it executes the in built unit tests and then waits until the enter key is pressed to exit.
+There is a very basic hard coded map within the game that will allow you to wander around.  The map has 5 locations snappily title Room 1, Room 2, etc.  To move from the starting location (Room 1) enter the command GO SOUTH (Note all commands must be upper case at this point).  If you need help then enter the command HELP X.  There are no pots of gold in the map so don't expect to much.
 
 # Cross platform
 At present there is nothing within the code that should not be fully portable to another platform.  
