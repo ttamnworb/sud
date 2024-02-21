@@ -17,6 +17,12 @@ namespace SUD
 	{
 	public:
 		/// <summary>
+		/// Defines the name of an invalid location
+		/// </summary>
+		static const std::string InvalidLocation;
+
+	public:
+		/// <summary>
 		/// Class constructor
 		/// </summary>
 		LocationObject(const std::string& name = "", const std::string description = "");

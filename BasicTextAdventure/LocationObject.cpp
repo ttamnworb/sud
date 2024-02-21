@@ -3,6 +3,8 @@
 
 namespace SUD
 {
+	const std::string LocationObject::InvalidLocation = BaseObject::InvalidName;
+
 	LocationObject::LocationObject(const std::string& name, const std::string description)
 		: BaseObject(name, description)
 	{}
@@ -38,6 +40,11 @@ namespace SUD
 
 	std::string LocationObject::GetDestination(const Direction::EDirection& direction) const
 	{
-		return m_Exits.at(direction).NextLocation;	// Have to use at because this is a const function.
+		const auto& iFound = m_Exits.find(direction);
+		if (iFound != m_Exits.end())
+		{
+			return iFound->second.NextLocation;
+		}
+		return InvalidLocation;
 	}
 }

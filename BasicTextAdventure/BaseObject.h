@@ -11,6 +11,12 @@ namespace SUD
 	{
 	public:
 		/// <summary>
+		/// Defines an invalid name (location/item/player/etc)
+		/// </summary>
+		static const std::string InvalidName;
+
+	public:
+		/// <summary>
 		/// Class constructor.
 		/// </summary>
 		BaseObject(const std::string& name = "", const std::string description = "");

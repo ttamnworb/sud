@@ -2,6 +2,8 @@
 
 namespace SUD
 {
+	const std::string BaseObject::InvalidName = "";
+
 	BaseObject::BaseObject(const std::string& name, const std::string description)
 		: m_Name(name)
 		, m_Description(description)

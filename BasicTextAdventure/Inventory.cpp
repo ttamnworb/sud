@@ -31,7 +31,7 @@ namespace SUD
 	bool Inventory::Remove(const std::string& name, ItemObject& object)
 	{
 		bool result(false);
-		const auto found = m_Items.find(name);
+		auto found = m_Items.find(name);
 		if (found != m_Items.end())
 		{
 			object = found->second;

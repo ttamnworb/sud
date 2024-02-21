@@ -51,7 +51,7 @@ namespace SUD
 
 		rooms[1].AddExit(Direction::EDirection::South, "2 South Door", "rm3");
 		rooms[1].AddExit(Direction::EDirection::North, "2 North Door", "rm1");
-		rooms[1].AddExit(Direction::EDirection::South, "2 East Door", "rm4");
+		rooms[1].AddExit(Direction::EDirection::East, "2 East Door", "rm4");
 
 		rooms[2].AddExit(Direction::EDirection::North, "3 North Door", "rm2");
 		rooms[2].AddExit(Direction::EDirection::East, "3 East Door", "rm5");

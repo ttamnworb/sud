@@ -2,15 +2,22 @@
 //
 
 #include <iostream>
-// #include "UnitTests.h"
+#include "UnitTests.h"
 #include "Game.h"
 
 
-int main()
+int main(int argc, char* argv[])
 {
-	//SUD_Tests::Tests();
-	//std::cout << "Tests complete - Press enter to exit\n";
+	// TODO Separate the code into a library so it works with proper unit testing frameworks.
 
-	SUD::Game game("nofile.txt");
+	if (argc > 1)
+	{
+		SUD_Tests::Tests();
+		std::cout << "Tests complete - Press enter to exit\n";
+	}
+	else
+	{
+		SUD::Game game("nofile.txt");
+	}
 	return fgetc(stdin);
 }
